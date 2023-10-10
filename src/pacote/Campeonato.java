@@ -112,10 +112,10 @@ public class Campeonato {
 
     public void melhorAtaqueDefesa() {
       listaEquipes.sort((e1, e2) -> e2.golsMarcados - e1.golsMarcados);
-      System.out.println("Equipe com melhor ataque: " + listaEquipes.get(0).nome + " (" + listaEquipes.get(0).golsMarcados + " gols marcados)");
+      System.out.println("Equipe com melhor ataque: " + listaEquipes.get(0).nome + " (" + listaEquipes.get(0).golsMarcados + " pontos marcados)");
 
       listaEquipes.sort((e1, e2) -> e1.golsSofridos - e2.golsSofridos);
-      System.out.println("Equipe com melhor defesa: " + listaEquipes.get(0).nome + " (" + listaEquipes.get(0).golsSofridos + " gols sofridos)\n");
+      System.out.println("Equipe com melhor defesa: " + listaEquipes.get(0).nome + " (" + listaEquipes.get(0).golsSofridos + " pontos sofridos)\n");
     }
  
   }
